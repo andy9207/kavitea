@@ -84,9 +84,10 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: kavitea_production
-    username: kavitea
-    password: <%= ENV["KAVITEA_DATABASE_PASSWORD"] %>
+    host: <%= ENV.fetch("DB_HOST", "172.17.0.1") %>
+    database: <%= ENV.fetch("POSTGRES_DB", "kavitea_production") %>
+    username: <%= ENV.fetch("POSTGRES_USER", "kavitea") %>
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: kavitea_production_cache

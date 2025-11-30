@@ -2,15 +2,18 @@
 service: kavitea
 
 # Name of the container image.
-image: your-user/kavitea
+image: kavitea/kavitea-main
 
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    hosts:
+      - 174.138.66.241
+    options:
+      add-host: host.docker.internal:host-gateway
   # job:
   #   hosts:
-  #     - 192.168.0.1
+  #     - 174.138.66.241
   #   cmd: bin/jobs
 
 # Enable SSL auto certification via Let's Encrypt and allow for multiple apps on a single web server.
@@ -19,15 +22,13 @@ servers:
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
   ssl: true
-  host: app.example.com
+  host: kavitea.com
 
 # Credentials for your image host.
 registry:
-  # Specify the registry server, if you're not using Docker Hub
-  # server: registry.digitalocean.com / ghcr.io / ...
-  username: your-user
-
-  # Always use an access token rather than real password when possible.
+  server: registry.digitalocean.com
+  username:
+    - KAMAL_REGISTRY_PASSWORD
   password:
     - KAMAL_REGISTRY_PASSWORD
 
@@ -35,6 +36,8 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - POSTGRES_PASSWORD
+
   clear:
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
     # When you start using multiple servers, you should split out job processing to a dedicated machine.
@@ -46,12 +49,19 @@ env:
     # Set number of cores available to the application on each server (default: 1).
     # WEB_CONCURRENCY: 2
 
-    # Match this to any external database server to configure Active Record correctly
-    # Use kavitea-db for a db accessory server on same machine via local kamal docker network.
-    # DB_HOST: 192.168.0.2
+    # Database connection to PostgreSQL on host machine via Docker bridge
+    DB_HOST: 172.17.0.1
+    POSTGRES_USER: kavitea
+    POSTGRES_DB: kavitea_production
 
     # Log everything from Rails
     # RAILS_LOG_LEVEL: debug
+
+# SSH configuration
+ssh:
+  user: kavitea
+  keys:
+    - ~/.ssh/kavitea
 
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
 # "bin/kamal logs -r job" will tail logs from the first server in the job section.
@@ -76,7 +86,7 @@ asset_path: /rails/public/assets
 # Configure the image builder.
 builder:
   arch: amd64
-
+  context: .
   # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
   # remote: ssh://docker@docker-builder-server
   #
@@ -86,31 +96,3 @@ builder:
   # secrets:
   #   - GITHUB_TOKEN
   #   - RAILS_MASTER_KEY
-
-# Use a different ssh user than root
-# ssh:
-#   user: app
-
-# Use accessory services (secrets come from .kamal/secrets).
-# accessories:
-#   db:
-#     image: mysql:8.0
-#     host: 192.168.0.2
-#     # Change to 3306 to expose port to the world instead of just local network.
-#     port: "127.0.0.1:3306:3306"
-#     env:
-#       clear:
-#         MYSQL_ROOT_HOST: '%'
-#       secret:
-#         - MYSQL_ROOT_PASSWORD
-#     files:
-#       - config/mysql/production.cnf:/etc/mysql/my.cnf
-#       - db/production.sql:/docker-entrypoint-initdb.d/setup.sql
-#     directories:
-#       - data:/var/lib/mysql
-#   redis:
-#     image: redis:7.0
-#     host: 192.168.0.2
-#     port: 6379
-#     directories:
-#       - data:/data
