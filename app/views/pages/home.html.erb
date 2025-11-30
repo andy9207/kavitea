@@ -1,0 +1,478 @@
+<% content_for :title, "Kavitea - Hidratacion Saludable 100% Organica" %>
+
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-kavitea-green to-kavitea-blue">
+  <div class="absolute inset-0 bg-black/30"></div>
+  <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+      Hidratacion saludable 100% organica, 0 azucar y 0 calorias
+    </h1>
+    <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+      Bebidas funcionales: electrolitos en stick y te listo para beber, pensados para una hidratacion sana y sin remordimientos.
+    </p>
+    <a href="#contact" class="inline-block bg-white text-kavitea-green font-semibold px-8 py-4 rounded-full text-lg hover:bg-kavitea-green hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+      Contactanos para colaborar
+    </a>
+  </div>
+</section>
+
+<!-- Quienes Somos Section -->
+<section id="about" data-controller="about" class="py-16 md:py-24 bg-gradient-to-b from-white to-kavitea-green/5">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Encabezado -->
+    <div class="text-center mb-12 md:mb-16" data-about-target="animate">
+      <h2 class="text-3xl md:text-4xl font-bold text-kavitea-blue mb-4">Quienes Somos</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Conoce la historia y la vision detras de Kavitea</p>
+    </div>
+
+    <!-- Historia + Imagen Placeholder -->
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16" data-about-target="animate">
+      <!-- Imagen/Placeholder (gradient) -->
+      <div class="rounded-2xl bg-gradient-to-br from-kavitea-green to-kavitea-blue h-64 md:h-80 flex items-center justify-center">
+        <svg class="w-24 h-24 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </div>
+      <!-- Texto Historia -->
+      <div>
+        <h3 class="text-2xl font-bold text-kavitea-blue mb-4">Nuestra Historia</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Kavitea nacio en 2025 con un proposito claro: revolucionar la hidratacion saludable en nuestra region.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Somos un equipo de emprendedores apasionados por la vida sana, comprometidos con crear bebidas innovadoras que cuiden tu bienestar sin comprometer el sabor. Aunque estamos comenzando, nuestra vision es clara: ofrecer productos de la mas alta calidad que cumplan con los estandares internacionales.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mision (quote style) -->
+    <div class="text-center mb-16 bg-kavitea-green/5 rounded-2xl p-8 md:p-12" data-about-target="animate">
+      <h3 class="text-xl font-semibold text-kavitea-green mb-4">Nuestra Mision</h3>
+      <blockquote class="text-xl md:text-2xl text-kavitea-blue font-medium italic max-w-3xl mx-auto">
+        "Ofrecer bebidas saludables y deliciosas que mejoren el bienestar de las personas, utilizando ingredientes 100% organicos y formulas innovadoras."
+      </blockquote>
+    </div>
+
+    <!-- Valores (3 tarjetas) -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <!-- Innovacion -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300" data-about-target="animate">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-kavitea-blue mb-2">Innovacion</h4>
+        <p class="text-gray-600">Desarrollamos formulas unicas de electrolitos y te sin azucar que marcan la diferencia.</p>
+      </div>
+
+      <!-- Calidad -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300" data-about-target="animate">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-kavitea-blue mb-2">Calidad</h4>
+        <p class="text-gray-600">Ingredientes 100% organicos certificados y procesos que cumplen estandares internacionales.</p>
+      </div>
+
+      <!-- Salud -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300" data-about-target="animate">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-kavitea-blue mb-2">Salud</h4>
+        <p class="text-gray-600">Priorizamos tu bienestar con bebidas 0 calorias, 0 azucar y llenas de beneficios.</p>
+      </div>
+    </div>
+
+    <!-- Enfoque Internacional -->
+    <div class="text-center bg-kavitea-blue text-white rounded-2xl p-8 md:p-12" data-about-target="animate">
+      <div class="w-16 h-16 mx-auto mb-6 bg-white/10 rounded-full flex items-center justify-center">
+        <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold mb-4">Alianzas Internacionales</h3>
+      <p class="text-white/90 max-w-2xl mx-auto text-lg leading-relaxed">
+        Creemos en construir alianzas internacionales solidas. Buscamos socios distribuidores y fabricantes de todo el mundo que compartan nuestra vision de llevar salud en cada sorbo. Nuestros productos cumplen con los mas altos estandares sanitarios internacionales.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Puntos Clave de Venta (USPs) -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- 0 Calorias -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-kavitea-blue mb-2">0 Calorias</h3>
+        <p class="text-gray-600">Disfruta sin preocupaciones</p>
+      </div>
+
+      <!-- 0 Azucar -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-kavitea-blue mb-2">0 Azucar</h3>
+        <p class="text-gray-600">Sin azucares anadidos</p>
+      </div>
+
+      <!-- 100% Organico -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-kavitea-blue mb-2">100% Organico</h3>
+        <p class="text-gray-600">Ingredientes naturales certificados</p>
+      </div>
+
+      <!-- Hidratacion Funcional -->
+      <div class="text-center p-6 rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-lg transition-all duration-300">
+        <div class="w-16 h-16 mx-auto mb-4 bg-kavitea-green/10 rounded-full flex items-center justify-center">
+          <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-kavitea-blue mb-2">Hidratacion Funcional</h3>
+        <p class="text-gray-600">Electrolitos para tu rendimiento</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Productos Section -->
+<section id="products" data-controller="products" class="py-16 md:py-24 bg-gradient-to-b from-white to-kavitea-green/5">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Encabezado -->
+    <div class="text-center mb-12 md:mb-16" data-products-target="animate">
+      <h2 class="text-3xl md:text-4xl font-bold text-kavitea-blue mb-4">Nuestros Productos</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Bebidas funcionales que cuidan tu cuerpo mientras disfrutas del sabor</p>
+    </div>
+
+    <!-- Grid de Productos (2 columnas) -->
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 mb-16">
+
+      <!-- Electrolitos en Sticks -->
+      <div class="bg-white rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-xl transition-all duration-300 overflow-hidden" data-products-target="animate">
+        <!-- Imagen/Placeholder -->
+        <div class="h-48 bg-gradient-to-br from-kavitea-green to-kavitea-blue flex items-center justify-center">
+          <svg class="w-20 h-20 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path>
+          </svg>
+        </div>
+        <div class="p-6">
+          <span class="inline-block bg-kavitea-green/10 text-kavitea-green text-sm font-semibold px-3 py-1 rounded-full mb-3">Proximamente</span>
+          <h3 class="text-2xl font-bold text-kavitea-blue mb-3">Electrolitos en Sticks</h3>
+          <p class="text-gray-600 mb-4">Sobres individuales de mezcla de electrolitos en polvo para disolver en agua. Ideales para hidratarte rapidamente antes, durante o despues de actividades fisicas.</p>
+
+          <!-- Beneficios -->
+          <h4 class="text-sm font-semibold text-kavitea-blue mb-2 uppercase tracking-wide">Beneficios</h4>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Reposicion de sales minerales y vitaminas
+            </li>
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Sin azucar ni calorias anadidas
+            </li>
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Apto para deportistas y personas activas
+            </li>
+          </ul>
+
+          <!-- Diferenciadores -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              100% Organico
+            </span>
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              0 Calorias
+            </span>
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              0 Azucar
+            </span>
+          </div>
+
+          <!-- Conveniencia -->
+          <div class="flex items-center gap-2 text-sm text-gray-500 border-t border-gray-100 pt-4">
+            <svg class="w-5 h-5 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+            </svg>
+            Facil de transportar al gimnasio, trabajo o viaje
+          </div>
+        </div>
+      </div>
+
+      <!-- Te RTD (Ready-to-Drink) -->
+      <div class="bg-white rounded-2xl border-2 border-kavitea-green/20 hover:border-kavitea-green hover:shadow-xl transition-all duration-300 overflow-hidden" data-products-target="animate">
+        <!-- Imagen/Placeholder -->
+        <div class="h-48 bg-gradient-to-br from-kavitea-blue to-kavitea-green flex items-center justify-center">
+          <svg class="w-20 h-20 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+          </svg>
+        </div>
+        <div class="p-6">
+          <span class="inline-block bg-kavitea-green/10 text-kavitea-green text-sm font-semibold px-3 py-1 rounded-full mb-3">Proximamente</span>
+          <h3 class="text-2xl font-bold text-kavitea-blue mb-3">Te Listo para Beber (RTD)</h3>
+          <p class="text-gray-600 mb-4">Te helado listo para beber, elaborado con extractos naturales de te, sin azucar, sin calorias y 100% organico. Refresco saludable que cuida tu cuerpo.</p>
+
+          <!-- Beneficios -->
+          <h4 class="text-sm font-semibold text-kavitea-blue mb-2 uppercase tracking-wide">Beneficios</h4>
+          <ul class="space-y-2 mb-4">
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Sabor delicioso con cero calorias
+            </li>
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              No impacta el indice glucemico
+            </li>
+            <li class="flex items-start gap-2 text-gray-600 text-sm">
+              <svg class="w-5 h-5 text-kavitea-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Rico en antioxidantes naturales
+            </li>
+          </ul>
+
+          <!-- Diferenciadores -->
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+              </svg>
+              Clean Label
+            </span>
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              0 Calorias
+            </span>
+            <span class="inline-flex items-center gap-1 bg-kavitea-blue/5 text-kavitea-blue text-xs font-medium px-2 py-1 rounded-full">
+              Sin Pesticidas
+            </span>
+          </div>
+
+          <!-- Variedades -->
+          <div class="flex items-center gap-2 text-sm text-gray-500 border-t border-gray-100 pt-4">
+            <svg class="w-5 h-5 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+            </svg>
+            Variedades: Te verde limon, Te negro durazno, Hibisco
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Datos de Mercado / Tendencia -->
+    <div class="text-center bg-kavitea-blue text-white rounded-2xl p-8 md:p-12 mb-12" data-products-target="animate">
+      <div class="w-16 h-16 mx-auto mb-6 bg-white/10 rounded-full flex items-center justify-center">
+        <svg class="w-8 h-8 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+        </svg>
+      </div>
+      <p class="text-xl md:text-2xl font-medium mb-2">
+        Las bebidas de te sin azucar crecieron un <span class="text-kavitea-green font-bold">41%</span> en Asia el ultimo año
+      </p>
+      <p class="text-white/80">Kavitea se adelanta a esta tendencia global de hidratacion saludable</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center" data-products-target="animate">
+      <p class="text-gray-600 mb-6">¿Interesado en distribuir Kavitea?</p>
+      <a href="#contact" class="inline-block bg-kavitea-green text-white font-semibold px-8 py-4 rounded-full text-lg hover:bg-kavitea-blue transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        Contactanos para Distribucion
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contacto Section -->
+<section id="contact" data-controller="contact" class="py-16 md:py-24 bg-gradient-to-b from-kavitea-green/5 to-white">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Encabezado -->
+    <div class="text-center mb-12 md:mb-16" data-contact-target="animate">
+      <h2 class="text-3xl md:text-4xl font-bold text-kavitea-blue mb-4">Contacto</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">¿Interesado en colaborar con Kavitea? Envianos un mensaje y te responderemos pronto</p>
+    </div>
+
+    <!-- Grid 2 columnas -->
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+
+      <!-- Formulario -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100" data-contact-target="animate">
+        <h3 class="text-xl font-bold text-kavitea-blue mb-6">Envianos un mensaje</h3>
+
+        <!-- Mensaje de exito -->
+        <div data-contact-target="success" class="hidden mb-6 p-4 bg-kavitea-green/10 border border-kavitea-green/20 rounded-lg">
+          <div class="flex items-center gap-3">
+            <svg class="w-6 h-6 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <p class="text-kavitea-green font-medium">¡Mensaje enviado! Te contactaremos pronto.</p>
+          </div>
+        </div>
+
+        <form data-contact-target="form" data-action="submit->contact#submit" class="space-y-4">
+          <!-- Nombre -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo *</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kavitea-green focus:border-kavitea-green transition-colors"
+              placeholder="Tu nombre">
+          </div>
+
+          <!-- Empresa -->
+          <div>
+            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+            <input type="text" id="company" name="company"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kavitea-green focus:border-kavitea-green transition-colors"
+              placeholder="Nombre de tu empresa">
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kavitea-green focus:border-kavitea-green transition-colors"
+              placeholder="tu@email.com">
+          </div>
+
+          <!-- Tipo de consulta -->
+          <div>
+            <label for="inquiry_type" class="block text-sm font-medium text-gray-700 mb-1">Tipo de consulta</label>
+            <select id="inquiry_type" name="inquiry_type"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kavitea-green focus:border-kavitea-green transition-colors bg-white">
+              <option value="">Selecciona una opcion</option>
+              <option value="distribucion">Distribucion</option>
+              <option value="fabricacion">Fabricacion / Produccion</option>
+              <option value="colaboracion">Colaboracion / Alianza</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <!-- Mensaje -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje *</label>
+            <textarea id="message" name="message" rows="4" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-kavitea-green focus:border-kavitea-green transition-colors resize-none"
+              placeholder="Cuentanos como podemos colaborar..."></textarea>
+          </div>
+
+          <!-- Boton enviar -->
+          <button type="submit"
+            class="w-full bg-kavitea-green text-white font-semibold px-6 py-4 rounded-lg text-lg hover:bg-kavitea-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+
+      <!-- Informacion de Contacto -->
+      <div class="space-y-6" data-contact-target="animate">
+        <h3 class="text-xl font-bold text-kavitea-blue mb-6">Informacion de contacto</h3>
+
+        <!-- Email -->
+        <a href="mailto:info@kavitea.com" class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:border-kavitea-green hover:shadow-md transition-all duration-300 group">
+          <div class="w-12 h-12 bg-kavitea-green/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-kavitea-green transition-colors">
+            <svg class="w-6 h-6 text-kavitea-green group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-kavitea-blue">Email</h4>
+            <p class="text-gray-600">info@kavitea.com</p>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:border-kavitea-green hover:shadow-md transition-all duration-300 group">
+          <div class="w-12 h-12 bg-kavitea-green/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-kavitea-green transition-colors">
+            <svg class="w-6 h-6 text-kavitea-green group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-kavitea-blue">WhatsApp</h4>
+            <p class="text-gray-600">Chatea con nosotros</p>
+          </div>
+        </a>
+
+        <!-- Ubicacion -->
+        <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+          <div class="w-12 h-12 bg-kavitea-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-kavitea-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-kavitea-blue">Ubicacion</h4>
+            <p class="text-gray-600">Latinoamerica</p>
+          </div>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="pt-6 border-t border-gray-100">
+          <h4 class="font-semibold text-kavitea-blue mb-4">Siguenos</h4>
+          <div class="flex gap-4">
+            <!-- LinkedIn -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-kavitea-blue/10 rounded-full flex items-center justify-center hover:bg-kavitea-blue transition-colors group">
+              <svg class="w-5 h-5 text-kavitea-blue group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-kavitea-blue/10 rounded-full flex items-center justify-center hover:bg-kavitea-blue transition-colors group">
+              <svg class="w-5 h-5 text-kavitea-blue group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mensaje final -->
+    <div class="text-center mt-12 md:mt-16" data-contact-target="animate">
+      <p class="text-xl md:text-2xl text-kavitea-blue font-medium">
+        ¡Estamos listos para llevar la hidratacion saludable a tu mercado!
+      </p>
+    </div>
+
+  </div>
+</section>

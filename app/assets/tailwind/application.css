@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Colores personalizados de Kavitea */
+@theme {
+  --color-kavitea-green: #0E4B3C;
+  --color-kavitea-blue: #0A1D31;
+  --color-kavitea-green-light: #1a6b54;
+  --color-kavitea-blue-light: #152d4a;
+}

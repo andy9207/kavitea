@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title><%= content_for(:title) || "Kavitea - Hidratacion Saludable 100% Organica" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Kavitea ofrece bebidas funcionales organicas: electrolitos en stick y te listo para beber. 0 calorias, 0 azucar, 100% organico.">
+    <meta name="keywords" content="kavitea, electrolitos, te organico, bebidas saludables, 0 calorias, 0 azucar, hidratacion">
+    <meta name="author" content="Kavitea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="<%= content_for(:title) || 'Kavitea - Hidratacion Saludable' %>">
+    <meta property="og:description" content="Bebidas funcionales organicas: electrolitos y te listo para beber. 0 calorias, 0 azucar.">
+    <meta property="og:type" content="website">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="font-['Inter'] antialiased bg-white text-gray-900">
+    <%= render "shared/navbar" %>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%= render "shared/footer" %>
+  </body>
+</html>
